@@ -1,18 +1,20 @@
 <template>
-  <div>
+  <div class="container">
     <div class="ms_main">
         <h1>
           -->Content goes here-->
         </h1>
     </div>
+    <SottoMain/>
   </div>
 </template>
 
 <script>
+import SottoMain from './SottoMain.vue'
 export default {
-  name: 'Main',
-  props: {
-    
+  name: 'App',
+  components: {
+    SottoMain,
   }
 }
 </script>
