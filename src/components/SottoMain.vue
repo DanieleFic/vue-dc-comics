@@ -80,6 +80,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 150px;
   }
 
 </style>

@@ -46,8 +46,11 @@
           </ul>
         </div>
       </div>
-      
+      <div class="logoimg">
+          <img src="../assets/img/dc-logo-bg.png" alt="">
+        </div>
     </div>
+    
     <div class="ms_secondfooter">
       <div class="container">
         <button type="button" class="ms_button">SIGN-UP NOW!</button>
@@ -79,13 +82,28 @@ export default {
 
 .ms_footer{
   background-image: url("../assets/img/footer-bg.jpg");
+  background-size: cover;
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+    .logoimg{
+      height: 500px;
+      margin: -30px;
+    }
+  }
 
 .msli{
   display: flex;
   flex-direction: row;
   padding: 30px 10px;
   color: white;
+
+  img{
+    height: 450px;
+  }
 
   .firstLI{
     padding-right:30px;
@@ -119,6 +137,7 @@ export default {
     background-color: #303030;
     margin: 0 auto;
     padding: 25px 15px;
+    position: relative;
 
     .ms_button{
       background-color: #303030;
