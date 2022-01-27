@@ -25,8 +25,5 @@ export default {
 @import '../src/assets/style/global.scss';
 #app {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
 </style>

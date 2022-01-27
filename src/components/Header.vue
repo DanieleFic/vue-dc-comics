@@ -7,11 +7,8 @@
       <div class="ms_menu">
       <img src="../assets/img/dc-logo.png" alt="">
       <ul>
-        <li><a href="#" target="_blank" rel="noopener">vue-router</a></li>
-        <li><a href="#" target="_blank" rel="noopener">vue-router</a></li>
-        <li><a href="#" target="_blank" rel="noopener">vue-router</a></li>
-        <li><a href="#" target="_blank" rel="noopener">vue-router</a></li>
-        <li><a href="#" target="_blank" rel="noopener">vue-router</a></li>
+        <li v-for="(element,indice) in links " :key="indice"><a href="#">{{element.text}}</a></li>
+        
       </ul>
     </div>
     </div>
@@ -24,7 +21,9 @@
 export default {
   name: 'Header',
   props: {
-    data() {
+    
+  },
+  data() {
     return{
       links:[
         {
@@ -80,8 +79,6 @@ export default {
       ]
     }
   }
-  }
-  
 }
 </script>
 

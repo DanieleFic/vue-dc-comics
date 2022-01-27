@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="ms_main">
+  <div class="ms_main2">
+    <div class="container">
         <h1>
           -->Content goes here-->
         </h1>
@@ -21,13 +21,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .ms_main{
+  .ms_main2{
     height: 150px;
     margin-top: 15px;
-    padding-left: 350px;
     background-color: black;
     color: white;
-    display: flex;
-    align-items: center;
   }
 </style>
