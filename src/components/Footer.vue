@@ -5,18 +5,18 @@
         <div class="firstLI">
         <h3>DC COMICS</h3>
       <ul>
-      <li><a href="#">Core Docs</a></li>
-      <li><a href="#">Forum</a></li>
-      <li><a href="#">Community Chat</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">News</a></li>
+        <li><a href="#">Core Docs</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Community Chat</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">News</a></li>
       </ul>
     <h3>SHOP</h3>
       <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
+        <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
+        <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
       </ul>
         </div>
       <div class="secondLI">
