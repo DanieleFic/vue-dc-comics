@@ -1,25 +1,9 @@
 <template>
   <div class="ms_main">
     <div class="container">
-      <div class="ms_icontext">
-          <img class="imgbox" src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <p>DIGITAL COMICS</p>
-        </div>
-        <div class="ms_icontext">
-          <img class="imgbox" src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <p>DIGITAL COMICS</p>
-        </div>
-        <div class="ms_icontext">
-          <img class="imgbox" src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <p>DIGITAL COMICS</p>
-        </div>
-        <div class="ms_icontext">
-          <img class="imgbox" src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <p>DIGITAL COMICS</p>
-        </div>
-        <div class="ms_icontext">
-          <img class="imgbox" src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <p>DIGITAL COMICS</p>
+      <div v-for="(element,indice) in links " :key="indice" class="ms_icontext">
+          <img class="imgbox" :src="element.img"  alt="">
+          <p>{{element.text}}</p>
         </div>
     </div>
   </div>
@@ -30,6 +14,37 @@ export default {
   name: 'SottoMain',
   props: {
     
+  },
+  data() {
+    return{
+      links:[
+        {
+          text: "DIGITAL COMICS",
+          img:require("../assets/img/buy-comics-digital-comics.png"),
+          current: false,
+        },
+        {
+          text: "DC MERCHANDISE",
+          img: require("../assets/img/buy-comics-merchandise.png"),
+          current: false,
+        },
+        {
+          text: "SUBSCRIPTION",
+          img: require("../assets/img/buy-comics-shop-locator.png"),
+          current: false,
+        },
+        {
+          text: "COMIC SHOP LOCATOR",
+          img: require("../assets/img/buy-comics-subscriptions.png"),
+          current: false,
+        },
+        {
+          text: "DC POWER VISA",
+          img: require("../assets/img/buy-dc-power-visa.svg"),
+          current: false,
+        },
+      ]
+    }
   }
 }
 </script>
@@ -54,7 +69,11 @@ export default {
   }
 
   .imgbox{
-    height: 60px;
+    height: 40px;
+
+    img{
+      height: 60px;
+    }
   }
 
   .container{
