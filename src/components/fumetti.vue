@@ -1,6 +1,6 @@
 <template>
 <div class="boxfumetti">
-        <img :src="thumb.src" :alt="thumb.titolo">
+        <img :src="img.thumb" :alt="thumb.titolo">
         <h3>{{fumetti.titolo}}</h3>
     </div>
 </template>
@@ -9,12 +9,15 @@
 export default {
     name: 'fumetti',
     props: {
-        'thumb': Object,
+        'img': Object,
         'testo': String
     }
 }
 </script>
 
 <style>
-
+    .boxfumetti{
+        height: 100px;
+        width: 100px;
+    }
 </style>

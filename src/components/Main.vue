@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import SottoMain from './SottoMain.vue'
 import fumetti from './fumetti.vue'
-import fumettidata from '../data/fumetti.js';
+import SottoMain from './SottoMain.vue'
+import fumettidata from '../data/fumetti'
 
 export default {
   name: 'App',
