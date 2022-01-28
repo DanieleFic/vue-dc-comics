@@ -21,7 +21,7 @@ export default {
         height: 200px;
         padding: 15px 20px;
         margin: 10px 0px;
-        background-size: cover;
+        background-size: contain;
 
         img{
             width: 100%;
