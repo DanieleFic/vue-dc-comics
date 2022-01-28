@@ -51,9 +51,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import '../assets/style/partials/variables.scss';
   .ms_main{
     height: 150px;
-    background-color: #0283f8;
+    background-color: $DCblue-color;
     color: white;
   }
 

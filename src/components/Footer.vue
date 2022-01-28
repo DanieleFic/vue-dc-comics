@@ -15,8 +15,8 @@
       </ul>
     <h3>SHOP</h3>
       <ul>
-        <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Core Docs</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Forum</a></li>
       </ul>
         </div>
       <div class="secondLI">
@@ -79,7 +79,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+@import '../assets/style/partials/variables.scss';
 .ms_footer{
   background-image: url("../assets/img/footer-bg.jpg");
   background-size: cover;
@@ -134,14 +134,14 @@ export default {
 
 .ms_secondfooter{
     height: 100px;
-    background-color: #303030;
+    background-color: $footer-color;
     margin: 0 auto;
     padding: 25px 15px;
     position: relative;
 
     .ms_button{
-      background-color: #303030;
-      border: 2px solid #0283f8;
+      background-color: $footer-color;
+      border: 2px solid $DCblue-color;
       color: white;
       padding: 15px;
     }
@@ -157,7 +157,7 @@ export default {
 .ms_social{
     display: flex;
     align-items: center;
-    color: #0283f8;
+    color: $DCblue-color;
     font-weight: 900;
   img{
     padding: 0 13px ;

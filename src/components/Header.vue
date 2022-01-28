@@ -7,7 +7,7 @@
       <div class="ms_menu">
       <img src="../assets/img/dc-logo.png" alt="">
       <ul>
-        <li v-for="(element,indice) in links " :key="indice"><a href="#">{{element.text}}</a></li>
+        <li v-for="(element,indice) in links " :key="indice"><a :class="{'active' : element.current}" href="#">{{element.text}}</a></li>
         
       </ul>
     </div>
@@ -31,7 +31,7 @@ export default {
         {
           text: "Comics",
           url: "#",
-          current: false,
+          current: true,
         },
         {
           text: "Movies",
@@ -81,8 +81,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-//@import '../src/assets/style/partials/variables.scss';
-
+@import '../assets/style/partials/variables.scss';
 h3 {
   margin: 40px 0 0;
 }
@@ -98,6 +97,12 @@ a {
   color: #000000;
   text-decoration: none;
   font-weight: 400;
+
+  &.active, &:hover{
+    color:$DCblue-color;
+  }
+
+
 }
 .preheader{
   height: 100px;
@@ -109,7 +114,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px 15px;
 }
 
 </style>
